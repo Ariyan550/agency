@@ -45,14 +45,27 @@
     height: 100%;
     
 }
-
-
 }
 
-@media all and (max-width:768px){
-    // .heroSection{
 
-    // }
+@media all and (max-width:768px){
+    .heroSection{
+        text-align: center;
+        h1{
+            font-size: 2rem!important;
+        }
+        .heroImg{
+            margin-top: 2rem;
+        }
+    }
+
+    .valueSection{
+        p{
+            font-size: 30px!important;
+        }
+    }
+
+
 }
 
 
