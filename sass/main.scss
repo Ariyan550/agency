@@ -1,0 +1,26 @@
+
+// import scss file
+@import 'variables';
+@import 'font';
+@import 'header';
+@import 'scrollbar';
+@import 'responsive';
+@import 'custom';
+@import 'hero';
+@import 'button';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $nunito;
+    text-decoration: none!important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $bodyDark;
+}

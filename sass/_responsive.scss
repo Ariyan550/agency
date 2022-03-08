@@ -1,0 +1,52 @@
+// start responsive navbar
+
+@media all and (max-width:992px){
+    .nav{
+        flex-direction: column;
+        background-color: $bodyDark;
+        position: fixed;
+        left: 50%;
+        width: 90%;
+        height: 70%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        padding: 1rem 1rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s;
+        li{
+            margin-top: 20px;
+            .highlightQuote{
+                display: block;
+            }
+        }
+
+    }
+
+
+    .nav.active{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .header{
+        padding: 1rem 1rem;
+    }
+
+   .hamburger{
+       display: block!important;
+   }
+
+   .heroSection{
+    margin-top: 100px!important;
+   
+   }
+
+
+
+}
+
+// end responsive navbar
+
+
+
