@@ -1,0 +1,22 @@
+
+.heroSection{
+    .getStartedBtn{
+        padding: 10px 30px;
+        outline: none;
+        border: none;
+        background-color: $primary;
+        font-weight: bold;
+        margin-top: 1rem;
+        transition: all .4s;
+        i{
+            transition: all .4s;
+        }
+        &:hover{
+            box-shadow: 0px 0px 30px -5px $primary;
+        }
+        &:hover i{
+            transform: translateX(10px);
+        }
+    }
+}
+

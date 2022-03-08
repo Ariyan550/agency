@@ -39,12 +39,22 @@
 
    .heroSection{
     margin-top: 100px!important;
-   
    }
 
+   .header_section{
+    height: 100%;
+    
+}
 
 
 }
+
+@media all and (max-width:768px){
+    // .heroSection{
+
+    // }
+}
+
 
 // end responsive navbar
 

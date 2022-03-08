@@ -29,3 +29,18 @@ scrollToTop.onclick =()=>{
 //end scroll to top
 
 
+// start typewriter effect
+
+const pushEffectText =document.querySelector('.typeWriterOne')
+let typeWriterEffectText ='For Your Business!'
+let durationEffect =100;
+let characterCount =0
+
+const documentOnloadFun=()=>{
+    setInterval(()=>{
+        pushEffectText.innerHTML += typeWriterEffectText.charAt(characterCount)
+        characterCount++
+    },durationEffect)
+}
+
+// end type writer effect
