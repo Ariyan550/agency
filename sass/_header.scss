@@ -6,14 +6,16 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: $bodyDark;
     padding: 1rem 3rem ;
+    padding-top:1.5rem;
+    transition: all .3s ease-in-out;
     .logo{
         img{
             width: 110px;
         }
     }
 
+   
 
     .hamburger{
         position: absolute;
@@ -79,4 +81,9 @@
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+}
+
+.header.active{
+    background-color: $bodyDark;
+    padding-top:1rem;
 }

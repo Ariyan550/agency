@@ -8,8 +8,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #1a2023;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  padding-top: 1.5rem;
+  transition: all .3s ease-in-out; }
   .header .logo img {
     width: 110px; }
   .header .hamburger {
@@ -62,6 +63,10 @@
   background-attachment: fixed;
   position: relative;
   overflow: hidden; }
+
+.header.active {
+  background-color: #1a2023;
+  padding-top: 1rem; }
 
 ::-webkit-scrollbar {
   width: 12px; }
@@ -8000,6 +8005,18 @@ textarea.form-control-lg {
   font-size: 38px;
   font-weight: 700;
   line-height: 34px; }
+
+.valueSection .flipbox {
+  transition: all 1s linear; }
+  .valueSection .flipbox p {
+    font-size: 25px;
+    margin-top: 10px; }
+  .valueSection .flipbox img {
+    width: 200px;
+    object-fit: contain; }
+
+.valueSection .valueContainer {
+  margin-top: 40px; }
 
 * {
   margin: 0;

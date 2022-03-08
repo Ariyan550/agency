@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <!-- third party cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- end third party cdn -->
     <link rel="stylesheet" href="css/style.css">
     <title>TradeX -Grow Your Business.</title>
 </head>
@@ -45,7 +48,9 @@
             <div class="col-lg-6">
                 <h1 class="">Customized Digital <br> Marketing Solutions,<br> Tailored <span class="text-primary typeWriterOne"></span></h1>
                 <p class="">Grow your business with our help through the most cost-effective strategies, catered for your needs..</p>
+              <a href="#about">
                 <button class="getStartedBtn">Get Started <i class="fa fa-arrow-right"></i></button>
+              </a>
             </div>
     
             <div class="col-lg-6">
@@ -75,7 +80,9 @@
                          and energetic people who are dedicated to serve our clients with 
                          utmost professionalism. Our services will help your business grow and
                           generate more leads than ever!</p>
-                        <button class="getStartedBtn">Read More <i class="fa fa-arrow-right"></i></button>
+                        <a href="#value">
+                            <button class="getStartedBtn">Read More <i class="fa fa-arrow-right"></i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -92,14 +99,35 @@
 
                             <!--start values section -->
 
-<section class="valueSection py-5 text-white">
+<section id="value" class="valueSection py-5 text-white">
 <div class="container">
     <div class="valueHeaderContent text-center">
         <h4>OUR VALUES</h4>
         <p class="text-primary">We’re True to Our Words and We Earn Our Reputation</p>
     </div>
-    <div class="row">
-        <div class="col-lg-4"></div>
+    <div class="row valueContainer">
+        <div class="col-lg-4">
+
+          <div class="hoverContainer text-center">
+            <div class="flipbox bg-secondary py-5">
+                <div class="front">
+                    <img class="img-fluid" src="img/value-1.png" alt="">
+                    <p class="text-primary">Client Satisfaction</p>
+                </div>
+                <div class="back">
+                  
+                </div>
+            </div>
+
+          </div>
+
+
+
+
+
+        </div>
+
+
         <div class="col-lg-4"></div>
         <div class="col-lg-4"></div> 
     </div>
@@ -131,11 +159,14 @@
 <!--end scroll top top -->
 
 <!-- start important audio file -->
-<audio src=""></audio>
+<audio id="audioBack" src="audio/backToTop.wav"></audio>
+
 
 <!-- end important audio file -->
 
 
+    <!-- extarnal cdn  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

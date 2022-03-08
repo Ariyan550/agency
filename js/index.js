@@ -1,9 +1,11 @@
 // responsive navbar
 const resToggleButton=document.querySelector('.hamburger')
+const backAudio =document.getElementById('audioBack')
 const navbar =document.querySelector('.nav')
 resToggleButton.onclick =()=>{
 resToggleButton.classList.toggle('active')
 navbar.classList.toggle('active')
+backAudio.play()
 }
 
 //end responsive navbar
@@ -25,9 +27,9 @@ scrollToTop.onclick =()=>{
        top:0,
        left:0
    })
+   backAudio.play()
 }
 //end scroll to top
-
 
 // start typewriter effect
 
@@ -44,3 +46,16 @@ const documentOnloadFun=()=>{
 }
 
 // end type writer effect
+
+
+
+//start sticky navbar
+window.addEventListener('scroll',()=>{
+    const header =document.querySelector('.header')
+    if(window.pageYOffset >30){
+        header.classList.add('active')
+    }else{
+        header.classList.remove('active')
+    }
+})
+// end sticky navbar
