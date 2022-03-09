@@ -45,6 +45,20 @@
     height: 100%;
     
 }
+
+
+.counterSection{
+    .counterContent{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
 }
 
 
@@ -63,7 +77,38 @@
         p{
             font-size: 30px!important;
         }
+
+        .flipbox{
+            margin-top: 20px;
+            height: 100%!important;
+            .back{
+                p{
+                    text-align: justify;
+                    word-break: break-all;
+                    line-height:30px!important;
+                    font-size: 20px!important;
+                  
+                }
+            }
+        }
     }
+
+    .aboutSection{
+        p{
+            text-align: justify;
+            word-break: break-all;
+        }
+    }
+
+
+    .counterSection{
+        .counterContent{
+            margin-top: 20px;
+        }
+    }
+
+
+
 
 
 }

@@ -43,12 +43,36 @@ const documentOnloadFun=()=>{
         pushEffectText.innerHTML += typeWriterEffectText.charAt(characterCount)
         characterCount++
     },durationEffect)
+
+
+// start counter section
+
+const counter =document.querySelectorAll('.counterNumber')
+
+counter.forEach((curEle)=>{
+    curEle.innerText=0;
+
+    const updateCounter=()=>{
+        const target  = +curEle.getAttribute('data-target')
+        const c = +curEle.innerText;
+        const incre = target/250
+
+        if(c < target){
+            curEle.innerText=`${Math.ceil(c + incre)}`
+            setTimeout(updateCounter,1)
+        }
+
+    }
+
+    updateCounter()
+})
+
+// end counter section
+
+
+
 }
-
 // end type writer effect
-
-
-
 //start sticky navbar
 window.addEventListener('scroll',()=>{
     const header =document.querySelector('.header')
@@ -59,3 +83,5 @@ window.addEventListener('scroll',()=>{
     }
 })
 // end sticky navbar
+
+
