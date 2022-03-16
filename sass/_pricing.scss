@@ -1,0 +1,22 @@
+.pricingSection{
+   h6{
+       font-size: 15px;
+       color: gray;
+   } 
+
+   h2{
+       font-weight: bold;
+       font-size: 30px;
+       margin: 20px 0px;
+   }
+
+   button{
+       font-weight: bold;
+   }
+
+   .pricingActive{
+       background-color: $primary;
+       color: black;
+   }
+
+}

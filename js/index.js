@@ -2,11 +2,25 @@
 const resToggleButton=document.querySelector('.hamburger')
 const backAudio =document.getElementById('audioBack')
 const navbar =document.querySelector('.nav')
+const navLink =document.querySelectorAll('.navLink')
+
 resToggleButton.onclick =()=>{
 resToggleButton.classList.toggle('active')
 navbar.classList.toggle('active')
 backAudio.play()
 }
+
+navLink.forEach( (curEle)=>{
+    curEle.addEventListener('click',()=>{
+        navbar.classList.remove('active')
+        resToggleButton.classList.remove('active')
+
+    })
+
+} )
+
+
+
 
 //end responsive navbar
 
@@ -83,5 +97,38 @@ window.addEventListener('scroll',()=>{
     }
 })
 // end sticky navbar
+
+
+//scroll navigation system 
+
+
+
+window.addEventListener('scroll',()=>{
+    const sections =document.querySelectorAll('.sectionScrool')
+    const li =document.querySelectorAll('.navLink')
+
+    let curent =''
+    
+    sections.forEach((section)=>{
+        let gettopValue =section.offsetTop
+        let sectionHeight =section.clientHeight
+            if(pageYOffset >= (gettopValue-sectionHeight/3)){
+                curent =section.id
+            }
+    })
+
+li.forEach((curEle)=>{
+        curEle.classList.remove('navLinkActive')
+        if(curEle.classList.contains(curent)){
+            curEle.classList.add('navLinkActive')
+        }else{
+            curEle.classList.remove('navLinkActive')
+        }
+})
+
+})
+
+
+// start pricing section
 
 

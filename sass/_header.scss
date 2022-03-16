@@ -47,10 +47,6 @@
 }
 .nav{
     display: flex;
-
-    .active{
-        color: $primary;
-    }
     .highlightQuote{
         font-weight: bold;
         &:hover{
@@ -86,4 +82,10 @@
 .header.active{
     background-color: $bodyDark;
     padding-top:1rem;
+}
+
+
+
+.navLinkActive{
+    color: $primary!important;
 }

@@ -36,8 +36,6 @@
 
 .nav {
   display: flex; }
-  .nav .active {
-    color: #ffb902; }
   .nav .highlightQuote {
     font-weight: bold; }
     .nav .highlightQuote:hover {
@@ -67,6 +65,9 @@
 .header.active {
   background-color: #1a2023;
   padding-top: 1rem; }
+
+.navLinkActive {
+  color: #ffb902 !important; }
 
 ::-webkit-scrollbar {
   width: 12px; }
@@ -8058,6 +8059,69 @@ textarea.form-control-lg {
 .counterSection .counterContent .happyClient {
   font-size: 15px;
   color: #bababa; }
+
+.serviceSection h6, .serviceSection .h6 {
+  font-size: 14px;
+  color: #bababa; }
+
+.serviceSection .borderStyle1 {
+  border-bottom: 3px solid green; }
+
+.serviceSection .borderStyle3 {
+  border-bottom: 3px solid blue; }
+
+.serviceSection .borderStyle2 {
+  border-bottom: 3px solid #ffb902; }
+
+.serviceSection .borderStyle4 {
+  border-bottom: 3px solid red; }
+
+.serviceSection .borderStyle5 {
+  border-bottom: 3px solid tomato; }
+
+.serviceSection .borderStyle6 {
+  border-bottom: 3px solid purple; }
+
+.serviceSection .serviceContent {
+  transition: all .4s;
+  margin-top: 16px;
+  height: 700px; }
+  .serviceSection .serviceContent img {
+    width: 80px; }
+  .serviceSection .serviceContent h3, .serviceSection .serviceContent .h3 {
+    font-size: 18px;
+    font-weight: bold; }
+  .serviceSection .serviceContent p {
+    text-align: justify;
+    word-break: break-all;
+    color: lightgray;
+    font-weight: 400; }
+  .serviceSection .serviceContent ul li {
+    font-size: 15px;
+    margin-top: 1px; }
+  .serviceSection .serviceContent span {
+    font-weight: bold; }
+  .serviceSection .serviceContent:hover {
+    background-color: white !important;
+    color: black; }
+    .serviceSection .serviceContent:hover p {
+      color: black; }
+
+.pricingSection h6, .pricingSection .h6 {
+  font-size: 15px;
+  color: gray; }
+
+.pricingSection h2, .pricingSection .h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0px; }
+
+.pricingSection button {
+  font-weight: bold; }
+
+.pricingSection .pricingActive {
+  background-color: #ffb902;
+  color: black; }
 
 * {
   margin: 0;

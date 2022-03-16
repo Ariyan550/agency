@@ -1,0 +1,80 @@
+.serviceSection{
+    h6{
+        font-size: 14px;
+        color: $scondaryLight;
+    }
+   
+    @mixin common($greenColor) {
+        border-bottom:3px solid $greenColor  
+    }
+    .borderStyle1{
+        @include common(green);
+    }
+    .borderStyle3{
+        @include common(blue);
+    }
+
+    .borderStyle2{
+        @include common($primary);
+    }
+  
+    .borderStyle4{
+        @include common(red);
+    }
+
+    .borderStyle5{
+        @include common(tomato);
+    }
+
+      
+    .borderStyle6{
+        @include common(purple);
+    }
+
+
+
+    .serviceContent{
+
+        transition: all .4s;
+        margin-top: 16px;
+        height: 700px;
+        img{
+            width: 80px;
+        }
+        h3{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p{
+            text-align: justify;
+            word-break: break-all;
+            color: lightgray;
+            font-weight: 400;
+        }
+        ul li{
+            font-size: 15px;
+            margin-top: 1px;
+        }
+
+        span{
+            font-weight: bold;
+
+        }
+
+        &:hover{
+            background-color: white!important;
+            color: black;
+            p{
+                color: black;
+            }
+
+        }
+
+
+
+    }
+
+  
+
+
+}
