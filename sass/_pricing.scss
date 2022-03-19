@@ -19,4 +19,86 @@
        color: black;
    }
 
+
+.priceBox{
+    z-index: -1;
+    position: relative;
+    padding: 0px 15px;
+    height: 1000px;
+    transition: all .2s linear;
+    margin-top: 80px!important;
+    &:hover{
+        transform: scale(1.1);
+    }
+    h2{
+        font-size: 27px;
+        font-weight: 400;
+        color: #07d5c0;
+    }
+    p{
+        font-size: 23px;
+        color: $scondaryLight;
+    }
+
+    img{
+        max-width: 140px;
+        margin-top: 20px;
+    }    
+
+    ul{
+        li{
+            list-style: none;
+            margin-top: 14px;
+            font-size: 13px;
+            .fa-check{
+                color: $primary;
+            }
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+
+
+
+    .bookBtn{
+        padding: 10px 40px;
+        background-color: transparent;
+        color: $primary;
+        border-radius: 70px;
+        transition: all .2s linear;
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        &:hover{
+            background-color: $primary;
+            color: black;
+        }
+    }
+
+    .bestSeller{
+        background-color: $primary;
+        color: black;
+        padding: 0px 10px;
+        position: absolute;
+        top: 15px;
+        font-size: 14px;
+        right: -20px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+        transform: rotate(50deg);
+    }
+
+
 }
+}
+
+
+.monthHide{
+    opacity: 0;
+    pointer-events: none;
+}
+

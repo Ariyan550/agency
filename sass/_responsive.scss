@@ -108,6 +108,19 @@
     }
 
 
+    .priceBox{
+        height: 900px!important;
+        &:hover{
+            transform: scale(1)!important;
+        }
+
+        .bookBtn{
+            bottom: 60px!important;
+        }
+    }
+
+
+
 
 
 
