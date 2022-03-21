@@ -443,8 +443,8 @@
             <h6>PRICING</h6>
             <h2 class="text-primary">Check Our Pricing</h2>
             <div>
-                <button class="pricingActive btn btn-info">Monthly</button>
-                <button class="btn btn-info">One-Time</button>
+                <button id="monthlyBtn" class="pricingActive btn btn-info">Monthly</button>
+                <button id="oneTimeBtn" class="btn btn-info">One-Time</button>
             </div>
         </div>
 
@@ -453,7 +453,7 @@
         <div class="row">
                 <!-- first -->
             <div class="col-lg-3">
-                <div class="priceBox bg-secondary py-4 mt-5  rounded">
+                <div class="priceBox  bg-secondary py-4 mt-5  rounded">
                    <div class="priceTop text-center">
                     <h2>SILVER</h2>
                     <p>Best for Startup</p>
@@ -477,7 +477,7 @@
                         </ul>
                     </div>
                     <div class="text-center">
-                        <button class="bookBtn btn-outline-primary">Book Now</button>
+                        <button data-target="SILVER" class="bookBtn btn-outline-primary">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -485,7 +485,7 @@
                     
             <!-- second -->
             <div class="col-lg-3">
-                <div class="priceBox bg-secondary py-4 mt-5  rounded">
+                <div class="priceBox month2 bg-secondary py-4 mt-5  rounded">
                     <div class="priceTop text-center">
                      <h2>GOLD</h2>
                      <p>Best for Small Business
@@ -510,7 +510,7 @@
                          </ul>
                      </div>
                      <div class="text-center">
-                         <button class="bookBtn btn-outline-primary">Book Now</button>
+                         <button data-target="GOLD" class="bookBtn btn-outline-primary">Book Now</button>
                      </div>
                      <span class="bestSeller">Best Seller</span>
                  </div>
@@ -520,7 +520,7 @@
 
              <!-- third -->
              <div class="col-lg-3">
-                <div class="priceBox bg-secondary py-4 mt-5  rounded">
+                <div class="priceBox month3 bg-secondary py-4 mt-5  rounded">
                     <div class="priceTop text-center">
                      <h2>PLATINUM</h2>
                      <p>Best for Medium Business</p>
@@ -544,12 +544,12 @@
                          </ul>
                      </div>
                      <div class="text-center">
-                         <button class="bookBtn btn-outline-primary">Book Now</button>
+                         <button data-target="PLATINUM" class="bookBtn btn-outline-primary">Book Now</button>
                      </div>
                  </div>
              </div>
              <div class="col-lg-3">
-                <div class="priceBox bg-secondary py-4 mt-5  rounded">
+                <div class="priceBox month4 bg-secondary py-4 mt-5  rounded">
                     <div class="priceTop text-center">
                      <h2>CUSTOM +</h2>
                      <p>Create Own Customized Plan!
@@ -574,7 +574,7 @@
                          </ul>
                      </div>
                      <div class="text-center">
-                         <button class="bookBtn btn-outline-primary">Book Now</button>
+                         <button data-target="Custom +" class="bookBtn btn-outline-primary">Book Now</button>
                      </div>
                  </div>
              </div>
@@ -586,15 +586,158 @@
 
         <div class="oneTime">
         <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+                <div class="priceBox tier tier1 bg-secondary py-4 mt-5  rounded">
+                    <div class="priceTop text-center">
+                     <h2>Tier 1 </h2>
+                
+                    </p>
+                     <div class="price">
+                         <sup class="h4">BDT</sup><span class="text-primary h1">7,500</span>
+                        
+                     </div>
+                     <img src="img/pricing-free.png" class="img-fluid" alt="">
+                    </div>
+                     <div class="list text-left mt-5">
+                         <ul>
+                             <li><i class="fa fa-check"></i> 2 Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>1 Promo Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>1000 Bulk SMS</li>
+                             <li><i class="fa fa-check"></i> 20 USD Promotion</li>
+                             <li><i class="fa fa-check"></i> 1 Text Content</li>
+                             <li><i class="fa fa-check"></i>Delivery in 1 to 3 days</li>
+                             <li><i class="fa fa-close"></i> 1 Explainer Video</li>
+                            
+                         </ul>
+                     </div>
+                     <div class="text-center">
+                         <button data-target="Tier1" class="bookBtn btn-outline-primary">Book Now</button>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="priceBox tier tier2 bg-secondary py-4 mt-5  rounded">
+                    <div class="priceTop text-center">
+                     <h2>Tier 2 </h2>
+                   
+                    </p>
+                     <div class="price">
+                         <sup class="h4">BDT</sup><span class="text-primary h1">9,500</span>
+                        
+                     </div>
+                     <img src="img/pricing-starter.png" class="img-fluid" alt="">
+                    </div>
+                     <div class="list text-left mt-5">
+                         <ul>
+                             <li><i class="fa fa-check"></i> 3 Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>1 Promo Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>1000 Bulk SMS</li>
+                             <li><i class="fa fa-check"></i> 20 USD Promotion</li>
+                             <li><i class="fa fa-check"></i> 2 Text Content</li>
+                             <li><i class="fa fa-check"></i>Delivery in 1 to 3 days</li>
+                             <li><i class="fa fa-close"></i> 1 Explainer Video</li>
+                            
+                         </ul>
+                     </div>
+                     <div class="text-center">
+                         <button data-target="Tier2" class="bookBtn btn-outline-primary">Book Now</button>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="priceBox tier tier3 bg-secondary py-4 mt-5  rounded">
+                    <div class="priceTop text-center">
+                     <h2>Tier 3 </h2>
+                   
+                    </p>
+                     <div class="price">
+                         <sup class="h4">BDT</sup><span class="text-primary h1">11,500</span>
+                        
+                     </div>
+                     <img src="img/pricing-business.png" class="img-fluid" alt="">
+                    </div>
+                     <div class="list text-left mt-5">
+                         <ul>
+                             <li><i class="fa fa-check"></i> 4 Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>2 Promo Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>1000 Bulk SMS</li>
+                             <li><i class="fa fa-check"></i> 20 USD Promotion</li>
+                             <li><i class="fa fa-check"></i> 3 Text Content</li>
+                             <li><i class="fa fa-check"></i>Delivery in 1 to 3 days</li>
+                             <li><i class="fa fa-close"></i> 1 Explainer Video</li>
+                            
+                         </ul>
+                     </div>
+                     <div class="text-center">
+                         <button data-target="Tier3" class="bookBtn btn-outline-primary">Book Now</button>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="priceBox tier tier4 bg-secondary py-4 mt-5  rounded">
+                    <div class="priceTop text-center">
+                     <h2>Tier + </h2>
+                   
+                    </p>
+                     <div class="price">
+                         <sup class="h4">BDT</sup><span class="text-primary h1">14,900</span>
+                        
+                     </div>
+                     <img src="img/pricing-ultimate.png" class="img-fluid" alt="">
+                    </div>
+                     <div class="list text-left mt-5">
+                         <ul>
+                             <li><i class="fa fa-check"></i> 5 Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>3 Promo Graphic Content
+                             </li>
+                             <li><i class="fa fa-check"></i>1000 Bulk SMS</li>
+                             <li><i class="fa fa-check"></i> 20 USD Promotion</li>
+                             <li><i class="fa fa-check"></i> 3 Text Content</li>
+                             <li><i class="fa fa-check"></i>Delivery in 1 to 7 days</li>
+                             <li><i class="fa fa-check"></i> 1 Explainer Video (30 Sec.)</li>
+                            
+                         </ul>
+                     </div>
+                     <div class="text-center">
+                         <button data-target="Tier +" class="bookBtn btn-outline-primary">Book Now</button>
+                     </div>
+                 </div>
+            </div>
         </div>
         </div>
-
-
     </div>
+
+
+<div class="popupdark"> </div>>
+    <div class="popupModal text-center">
+        <div class="ModalContent">
+            <div class="mHeader mb-3">
+                <h1></h1>
+                <h3 id="outputPricingMethod"></h3>
+                <button id="modalClose"><i class="fa fa-close"></i></button>
+            </div>
+            <img src="img/Group 33339.png" class="img-fluid" alt="">
+            <div class="mainModal">
+               <form >
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Number">
+                <input type="text" placeholder="Company Name (Optional)">
+                <button class="bookBtn btn-outline-primary" type="submit">Book Now</button>
+               </form>
+            </div>   
+        </div>
+    </div>
+ 
+
+
 </section>
 
 

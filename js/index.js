@@ -131,4 +131,53 @@ li.forEach((curEle)=>{
 
 // start pricing section
 
+const priceMonth =document.querySelector('.monthly')
+const oneTimeBtn =document.querySelector('#oneTimeBtn')
+const monthlyBtn =document.querySelector('#monthlyBtn')
+const priceOne =document.querySelector('.oneTime')
+const bookbtn=document.querySelectorAll('.bookBtn')
+const closeBtn =document.querySelector('#modalClose')
+const dark =document.querySelector('.popupdark')
+const outputPricing =document.querySelector('#outputPricingMethod')
 
+priceOne.style.display='none'
+const hidemonth =()=>{
+    priceMonth.classList.add('monthHide')
+    priceOne.style.display='block'
+}
+
+const hideoneTime =()=>{
+    priceMonth.classList.remove('monthHide')
+    priceOne.style.display='none'
+}
+
+
+
+bookbtn.forEach((curEle)=>{
+  
+    const modal =document.querySelector('.popupModal')
+    const bookBtnFunction=()=>{
+        let storData =curEle.getAttribute('data-target')
+        modal.classList.add('modalShow')
+        dark.classList.add('darkFade')
+        outputPricing.textContent=storData;
+    }
+    curEle.addEventListener('click',bookBtnFunction)
+})
+
+
+closeBtn.onclick=()=>{
+    const modal =document.querySelector('.popupModal')
+    modal.classList.remove('modalShow')
+    dark.classList.remove('darkFade')
+}
+
+
+dark.onclick=()=>{
+    const modal =document.querySelector('.popupModal')
+    dark.classList.remove('darkFade')
+    modal.classList.remove('modalShow')
+}
+
+oneTimeBtn.addEventListener('click',hidemonth)
+monthlyBtn.addEventListener('click',hideoneTime)

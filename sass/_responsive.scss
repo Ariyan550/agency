@@ -121,8 +121,27 @@
 
 
 
+.popupModal{
+    width: 100%;
+    padding: 10px 0;
+}
 
 
+
+
+
+}
+
+
+
+@media all and (min-width:992px){
+
+
+    .popupModal{
+        width: 500px;
+        
+    }
+    
 
 }
 

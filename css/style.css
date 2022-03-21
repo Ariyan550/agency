@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 .header {
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -170,7 +171,14 @@
     .priceBox:hover {
       transform: scale(1) !important; }
     .priceBox .bookBtn {
-      bottom: 60px !important; } }
+      bottom: 60px !important; }
+  .popupModal {
+    width: 100%;
+    padding: 10px 0; } }
+
+@media all and (min-width: 992px) {
+  .popupModal {
+    width: 500px; } }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -8113,78 +8121,161 @@ textarea.form-control-lg {
     .serviceSection .serviceContent:hover p {
       color: black; }
 
-.pricingSection h6, .pricingSection .h6 {
-  font-size: 15px;
-  color: gray; }
-
-.pricingSection h2, .pricingSection .h2 {
-  font-weight: bold;
-  font-size: 30px;
-  margin: 20px 0px; }
-
-.pricingSection button {
-  font-weight: bold; }
-
-.pricingSection .pricingActive {
-  background-color: #ffb902;
-  color: black; }
-
-.pricingSection .priceBox {
-  z-index: -1;
-  position: relative;
-  padding: 0px 15px;
-  height: 1000px;
-  transition: all .2s linear;
-  margin-top: 80px !important; }
-  .pricingSection .priceBox:hover {
-    transform: scale(1.1); }
-  .pricingSection .priceBox h2, .pricingSection .priceBox .h2 {
-    font-size: 27px;
-    font-weight: 400;
-    color: #07d5c0; }
-  .pricingSection .priceBox p {
-    font-size: 23px;
-    color: #bababa; }
-  .pricingSection .priceBox img {
-    max-width: 140px;
-    margin-top: 20px; }
-  .pricingSection .priceBox ul li {
-    list-style: none;
-    margin-top: 14px;
-    font-size: 13px; }
-    .pricingSection .priceBox ul li .fa-check {
-      color: #ffb902; }
-    .pricingSection .priceBox ul li i {
-      margin-right: 10px; }
-  .pricingSection .priceBox .bookBtn {
-    padding: 10px 40px;
-    background-color: transparent;
-    color: #ffb902;
-    border-radius: 70px;
-    transition: all .2s linear;
-    position: absolute;
-    bottom: 40px;
-    left: 50px; }
-    .pricingSection .priceBox .bookBtn:hover {
-      background-color: #ffb902;
-      color: black; }
-  .pricingSection .priceBox .bestSeller {
+.pricingSection {
+  position: relative; }
+  .pricingSection .popupdark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    display: none; }
+  .pricingSection .popupModal {
+    z-index: 1;
+    height: auto;
+    transition: all .3s linear;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a2023;
+    padding: 30px 30px; }
+    .pricingSection .popupModal img {
+      width: 200px;
+      margin-bottom: 20px; }
+    .pricingSection .popupModal .mainModal .bookBtn {
+      padding: 10px 40px;
+      background-color: transparent;
+      color: #ffb902;
+      border-radius: 70px;
+      transition: all .2s linear;
+      margin-top: 20px; }
+      .pricingSection .popupModal .mainModal .bookBtn:hover {
+        background-color: #ffb902 !important;
+        color: black; }
+    .pricingSection .popupModal .mainModal input {
+      color: white;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid #455a64;
+      height: 40px;
+      padding: 0px 10px;
+      transition: all 0.3s;
+      margin-top: 14px; }
+      .pricingSection .popupModal .mainModal input:focus {
+        border-color: #ffb902; }
+    .pricingSection .popupModal .mHeader {
+      display: flex;
+      justify-content: space-between; }
+      .pricingSection .popupModal .mHeader button {
+        outline: none;
+        border: none;
+        background: none;
+        cursor: pointer; }
+        .pricingSection .popupModal .mHeader button i {
+          color: #ffb902;
+          font-size: 25px; }
+  .pricingSection h6, .pricingSection .h6 {
+    font-size: 15px;
+    color: gray; }
+  .pricingSection h2, .pricingSection .h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0px; }
+  .pricingSection button {
+    font-weight: bold; }
+  .pricingSection .pricingActive {
     background-color: #ffb902;
-    color: black;
-    padding: 0px 10px;
-    position: absolute;
-    top: 15px;
-    font-size: 14px;
-    right: -20px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transform: rotate(50deg); }
+    color: black; }
+  .pricingSection .month2 h2, .pricingSection .month2 .h2 {
+    color: green !important; }
+  .pricingSection .month3 h2, .pricingSection .month3 .h2 {
+    color: #ffb902 !important; }
+  .pricingSection .month4 h2, .pricingSection .month4 .h2 {
+    color: purple !important; }
+  .pricingSection .oneTime h2, .pricingSection .oneTime .h2 {
+    font-size: 24px;
+    font-weight: bold; }
+  .pricingSection .oneTime .tier1 h2, .pricingSection .oneTime .tier1 .h2 {
+    color: #07d5c0 !important; }
+  .pricingSection .oneTime .tier2 h2, .pricingSection .oneTime .tier2 .h2 {
+    color: green !important; }
+  .pricingSection .oneTime .tier3 h2, .pricingSection .oneTime .tier3 .h2 {
+    color: #ffb902 !important; }
+  .pricingSection .oneTime .tier4 h2, .pricingSection .oneTime .tier4 .h2 {
+    color: purple !important; }
+  .pricingSection .priceBox {
+    position: relative;
+    padding: 0px 15px;
+    height: 1000px;
+    transition: all .2s linear;
+    margin-top: 80px !important; }
+    .pricingSection .priceBox:hover {
+      transform: scale(1.1); }
+    .pricingSection .priceBox h2, .pricingSection .priceBox .h2 {
+      font-size: 27px;
+      font-weight: 400;
+      color: #07d5c0; }
+    .pricingSection .priceBox p {
+      font-size: 23px;
+      color: #bababa; }
+    .pricingSection .priceBox img {
+      max-width: 140px;
+      margin-top: 20px; }
+    .pricingSection .priceBox ul li {
+      list-style: none;
+      margin-top: 14px;
+      font-size: 13px; }
+      .pricingSection .priceBox ul li .fa-check {
+        color: #ffb902; }
+      .pricingSection .priceBox ul li .fa-close {
+        color: red; }
+      .pricingSection .priceBox ul li i {
+        margin-right: 10px; }
+    .pricingSection .priceBox .bookBtn {
+      padding: 10px 40px;
+      background-color: transparent;
+      color: #ffb902;
+      border-radius: 70px;
+      transition: all .2s linear;
+      position: absolute;
+      bottom: 40px;
+      left: 50px; }
+      .pricingSection .priceBox .bookBtn:hover {
+        background-color: #ffb902 !important;
+        color: black; }
+    .pricingSection .priceBox .bestSeller {
+      background-color: #ffb902;
+      color: black;
+      padding: 0px 10px;
+      position: absolute;
+      top: 15px;
+      font-size: 14px;
+      right: -20px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      transform: rotate(50deg); }
+  .pricingSection .oneTime .tier {
+    height: 700px; }
 
 .monthHide {
-  opacity: 0;
-  pointer-events: none; }
+  height: 0;
+  display: none; }
+
+.modalShow {
+  opacity: 1 !important;
+  pointer-events: auto !important; }
+
+.darkFade {
+  display: block !important; }
 
 * {
   margin: 0;
