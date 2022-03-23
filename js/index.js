@@ -181,3 +181,6 @@ dark.onclick=()=>{
 
 oneTimeBtn.addEventListener('click',hidemonth)
 monthlyBtn.addEventListener('click',hideoneTime)
+
+
+// footer section

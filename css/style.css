@@ -178,7 +178,10 @@
 
 @media all and (min-width: 992px) {
   .popupModal {
-    width: 500px; } }
+    width: 500px; }
+  .subscribe {
+    width: 600px;
+    margin: auto; } }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -8276,6 +8279,45 @@ textarea.form-control-lg {
 
 .darkFade {
   display: block !important; }
+
+.footer {
+  text-decoration: none; }
+  .footer .footerBody {
+    margin-top: 100px; }
+  .footer ul li {
+    font-size: 14px;
+    color: lightgray;
+    list-style: none !important;
+    margin-top: 14px; }
+    .footer ul li i {
+      margin-right: 10px; }
+  .footer h3, .footer .h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .footer h2, .footer .h2 {
+    font-size: 16px; }
+  .footer .footerHeader h2, .footer .footerHeader .h2 {
+    font-weight: bold; }
+  .footer .footerHeader .subscribe {
+    margin-top: 30px;
+    position: relative; }
+    .footer .footerHeader .subscribe input {
+      width: 100%;
+      height: 50px;
+      border-radius: 50px;
+      outline: none;
+      border: none;
+      padding: 0px 12px; }
+    .footer .footerHeader .subscribe button {
+      position: absolute;
+      top: 5%;
+      padding: 10px 30px;
+      right: 5px;
+      outline: none;
+      border: none;
+      background-color: #ffb902;
+      border-radius: 30px; }
 
 * {
   margin: 0;

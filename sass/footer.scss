@@ -1,0 +1,61 @@
+.footer{
+
+    .footerBody{
+        margin-top: 100px;
+    }
+    ul{
+        li{
+            font-size: 14px;
+            color: lightgray;
+            list-style: none!important;
+            margin-top: 14px;
+            i{
+                margin-right: 10px;
+            }
+          
+        }
+    }
+    h3{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    text-decoration: none;
+    .footerHeader{
+        h2{
+            font-weight: bold;
+        }
+
+
+        .subscribe{
+            margin-top: 30px;
+            position: relative;
+        input{
+            width: 100%;
+            height: 50px;
+            border-radius: 50px;
+            outline: none;
+            border:none;
+            padding: 0px 12px;
+        }
+
+        button{
+            position: absolute;
+            top: 5%;
+            padding: 10px 30px;
+            right: 5px;
+            outline: none;
+            border: none;
+            background-color: $primary;
+            border-radius: 30px;
+        }
+        }
+
+    }
+
+
+
+}
