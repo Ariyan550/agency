@@ -174,7 +174,9 @@
       bottom: 60px !important; }
   .popupModal {
     width: 100%;
-    padding: 10px 0; } }
+    padding: 10px 0; }
+  .contactSection form {
+    margin-top: 15px; } }
 
 @media all and (min-width: 992px) {
   .popupModal {
@@ -8373,7 +8375,7 @@ textarea.form-control-lg {
 .contactSection button {
   width: 200px;
   margin: auto;
-  margin-top: 40px; }
+  margin-top: 10px; }
 
 .faq .faqHeader h2, .faq .faqHeader .h2 {
   font-size: 32px;
