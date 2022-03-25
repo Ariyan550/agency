@@ -1,7 +1,13 @@
 .swiper {
     width: 260px;
-    height: 340px;
+    height: 360px;
     
+  }
+
+  @media all and (max-width:768px){
+    .swiper{
+      width: 100%;
+    }
   }
 
   .swiper-slide {
@@ -14,7 +20,7 @@
   }
 
   .swiper-slide p{
-    font-size: 15px;
+    font-size: 13px;
     text-align: justify;
     word-break: break-all;
   }

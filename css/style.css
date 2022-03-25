@@ -8395,8 +8395,17 @@ textarea.form-control-lg {
 .faq .accordion-body {
   background-color: #1a2023 !important; }
 
-.client .clientCarosel img {
-  width: 100px; }
+.client .clientHeader h3, .client .clientHeader .h3 {
+  font-size: 14px; }
+
+.client .clientHeader h2, .client .clientHeader .h2 {
+  font-weight: bold; }
+
+.testimonial .testiHeader h3, .testimonial .testiHeader .h3 {
+  font-size: 14px; }
+
+.testimonial .testiHeader h2, .testimonial .testiHeader .h2 {
+  font-weight: bold; }
 
 * {
   margin: 0;
