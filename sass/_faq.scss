@@ -1,0 +1,31 @@
+.faq{
+
+    .faqHeader{
+        h2{
+            font-size: 32px;
+            font-weight: bold;
+            color: $primary;
+        }
+        h3{
+            font-size: 15px;
+            color: lightgray;
+            font-weight: bold;
+        }
+    }
+
+    .accordion-button{
+        background-color: $secondary!important;
+        &::after{
+            background-color: $primary!important;
+            
+        }   
+     
+    }
+
+    .accordion-body{
+        background-color: $bodyDark!important;
+    }
+
+
+
+}

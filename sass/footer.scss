@@ -2,7 +2,24 @@
 
     .footerBody{
         margin-top: 100px;
+        p{
+            text-align: justify;
+            word-break: break-all;
+        }
     }
+
+    .socialIcon{
+        a{
+            margin-left: 15px;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+
+
+
+
     ul{
         li{
             font-size: 14px;

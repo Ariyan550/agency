@@ -8284,6 +8284,13 @@ textarea.form-control-lg {
   text-decoration: none; }
   .footer .footerBody {
     margin-top: 100px; }
+    .footer .footerBody p {
+      text-align: justify;
+      word-break: break-all; }
+  .footer .socialIcon a {
+    margin-left: 15px; }
+    .footer .socialIcon a i {
+      font-size: 25px; }
   .footer ul li {
     font-size: 14px;
     color: lightgray;
@@ -8318,6 +8325,76 @@ textarea.form-control-lg {
       border: none;
       background-color: #ffb902;
       border-radius: 30px; }
+
+.contactSection .contactRound {
+  transition: all .3s linear; }
+  .contactSection .contactRound:hover {
+    background-color: #ffb902;
+    color: black; }
+  .contactSection .contactRound i {
+    font-size: 32px;
+    margin-bottom: 10px; }
+
+.contactSection h3, .contactSection .h3 {
+  font-size: 15px;
+  color: lightgrey; }
+
+.contactSection h2, .contactSection .h2 {
+  font-weight: bold;
+  font-size: 40px; }
+
+.contactSection input {
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  outline: none;
+  border: 1px solid #ffb902;
+  background-color: transparent;
+  padding: 8px 10px;
+  transition: all .4s;
+  color: white; }
+  .contactSection input:focus {
+    border-color: #bababa; }
+
+.contactSection textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 140px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #ffb902;
+  resize: none;
+  color: white; }
+  .contactSection textarea:focus {
+    border-color: #bababa; }
+
+.contactSection button {
+  width: 200px;
+  margin: auto;
+  margin-top: 40px; }
+
+.faq .faqHeader h2, .faq .faqHeader .h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffb902; }
+
+.faq .faqHeader h3, .faq .faqHeader .h3 {
+  font-size: 15px;
+  color: lightgray;
+  font-weight: bold; }
+
+.faq .accordion-button {
+  background-color: #182830 !important; }
+  .faq .accordion-button::after {
+    background-color: #ffb902 !important; }
+
+.faq .accordion-body {
+  background-color: #1a2023 !important; }
+
+.client .clientCarosel img {
+  width: 100px; }
 
 * {
   margin: 0;

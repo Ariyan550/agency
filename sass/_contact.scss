@@ -1,0 +1,67 @@
+.contactSection{
+
+
+    .contactRound{
+
+        transition: all .3s linear;
+        &:hover{
+            background-color: $primary;
+            color: black;
+        }
+
+        i{
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    h3{
+        font-size: 15px;
+        color: lightgrey;
+    }
+    h2{
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    input{
+        width: 100%;
+        margin-top: 16px;
+        border: none;
+        outline: none;
+        border: 1px solid $primary;
+        background-color: transparent;
+        padding: 8px 10px;
+        transition: all .4s;
+        color: white;
+        &:focus{
+            border-color: $scondaryLight;
+        }
+
+    }
+
+    textarea{
+        margin-top: 20px;
+        width: 100%;
+        height: 140px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid $primary;
+        resize: none;
+        color: white;
+        &:focus{
+            border-color: $scondaryLight;
+        }
+    }
+
+    button{
+        width: 200px;
+        margin: auto;
+        margin-top: 40px;
+        
+    }
+
+}
