@@ -13,19 +13,58 @@
         }
     }
 
-    .accordion-button{
-        background-color: $secondary!important;
-        &::after{
-            background-color: $primary!important;
-            
-        }   
-     
-    }
+   .btn2{
+        border: none;
+        outline: none;
+        background-color: $secondary;
+        color: white;
+        padding: 15px 22px;
+        width:100%;
+        font-size: 19px;
+   }
 
-    .accordion-body{
-        background-color: $bodyDark!important;
-    }
+   @media all and (max-width:550px){
+       .btn2{
+        margin-top: 15px;
+       }
+   }
 
+   .accor{
+       background-color: $bodyDark;
+       height: 0;
+       overflow: hidden;
+       transition: all .3s ease-in-out;
+   }
+   .accorTwo{
+    background-color: $bodyDark;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+   .btn1{
+    border: none;
+    outline: none;
+    background-color: $secondary;
+    color: white;
+    padding: 15px 22px;
+    width:100%;
+    font-size: 19px;
+}
 
+}
 
+.accor.active{
+    height: 200px;
+}
+
+.accorTwo.active{
+    height: 400px;
+}
+
+.colors{
+    color: $primary!important;
+}
+
+.rotate{
+    transform: rotate(180deg);
 }

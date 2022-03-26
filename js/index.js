@@ -183,4 +183,24 @@ oneTimeBtn.addEventListener('click',hidemonth)
 monthlyBtn.addEventListener('click',hideoneTime)
 
 
+// start accordian section
+
+const accorBtn =document.querySelector('.accorBtn')
+const accorBtnTwo =document.querySelector('.accorBtnTwo')
+const accor =document.querySelector('.accor')
+const accorTwo =document.querySelector('.accorTwo')
+const rotateIcon =document.querySelector('.rotate1')
+const rotateIcon2 =document.querySelector('.rotate2')
+
+    accorBtn.addEventListener('click',()=>{
+        accor.classList.toggle('active')
+        accorBtn.classList.toggle('colors')
+        rotateIcon.classList.toggle('rotate')
+    })
+
+    accorBtnTwo.addEventListener('click',()=>{
+        accorTwo.classList.toggle('active')
+        accorBtnTwo.classList.toggle('colors')
+        rotateIcon2.classList.toggle('rotate')
+    })
 

@@ -1,4 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
+    effect: "cube",
     grabCursor: true,
+    autoplay:true,
+    speed:200
+
   });

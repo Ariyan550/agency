@@ -8387,13 +8387,51 @@ textarea.form-control-lg {
   color: lightgray;
   font-weight: bold; }
 
-.faq .accordion-button {
-  background-color: #182830 !important; }
-  .faq .accordion-button::after {
-    background-color: #ffb902 !important; }
+.faq .btn2 {
+  border: none;
+  outline: none;
+  background-color: #182830;
+  color: white;
+  padding: 15px 22px;
+  width: 100%;
+  font-size: 19px; }
 
-.faq .accordion-body {
-  background-color: #1a2023 !important; }
+@media all and (max-width: 550px) {
+  .faq .btn2 {
+    margin-top: 15px; } }
+
+.faq .accor {
+  background-color: #1a2023;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out; }
+
+.faq .accorTwo {
+  background-color: #1a2023;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out; }
+
+.faq .btn1 {
+  border: none;
+  outline: none;
+  background-color: #182830;
+  color: white;
+  padding: 15px 22px;
+  width: 100%;
+  font-size: 19px; }
+
+.accor.active {
+  height: 200px; }
+
+.accorTwo.active {
+  height: 400px; }
+
+.colors {
+  color: #ffb902 !important; }
+
+.rotate {
+  transform: rotate(180deg); }
 
 .client .clientHeader h3, .client .clientHeader .h3 {
   font-size: 14px; }
