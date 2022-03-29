@@ -8451,7 +8451,7 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: whitesmoke;
+  background-color: white;
   z-index: 1;
   overflow: hidden; }
   .preloader .preloaderContent {
@@ -8464,7 +8464,8 @@ textarea.form-control-lg {
     flex-shrink: 0; }
     .preloader .preloaderContent img {
       width: 200px;
-      object-fit: contain; }
+      object-fit: contain;
+      margin-top: -70px; }
 
 .popupSms {
   position: fixed;
@@ -8501,6 +8502,15 @@ textarea.form-control-lg {
 .activePopUp {
   opacity: 1 !important;
   transform: scale(1) !important; }
+
+.refound {
+  margin-top: 70px;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #1a2023; }
+  .refound .refundHeader {
+    padding: 15px; }
 
 * {
   margin: 0;
