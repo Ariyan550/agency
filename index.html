@@ -21,7 +21,7 @@
 <body onload="documentOnloadFun()">
     <!--start navbar section -->
 
-    <section id="home" class="header_section">
+    <section id="home" class="header_section sectionScrool">
         <div class="container">
             <header class="header">
                 <div class="logo">
@@ -744,11 +744,11 @@
                 <img src="img/Group 33339.png" class="img-fluid" alt="">
                 <div class="mainModal">
                     <form>
-                        <input type="text" placeholder="Enter Your Name">
-                        <input type="email" placeholder="Enter Your Email">
-                        <input type="text" placeholder="Enter Your Number">
+                        <input required type="text" placeholder="Enter Your Name">
+                        <input required type="email" placeholder="Enter Your Email">
+                        <input required type="text" placeholder="Enter Your Number">
                         <input type="text" placeholder="Company Name (Optional)">
-                        <button class="bookBtn btn-outline-primary" type="submit">Book Now</button>
+                        <button id="submit" class="bookBtn btn-outline-primary" type="submit">Book Now</button>
                     </form>
                 </div>
             </div>
@@ -1108,13 +1108,28 @@
     <!-- others -->
 
     <!-- popup -->
-    <div class="popupSms">
+    <div class="popupSms text-white">
         <div class="alertcontent">
-
+            <div class="checkBox">
+                <i class="fa fa-check"></i>
+            </div>
+            <h3>Thank You</h3>
+            <p>Your Booking Has been confirmed. check your email for details</p>
+            <button class="px-5 btn btn-primary ok">Ok</button>
         </div>
     </div>
 
     <!-- end popup -->
+
+    
+
+    <div class="preloader">
+        <div class="preloaderContent">
+            <img class="img-fluid" src="img/loading.gif" alt="">
+        </div>
+    </div>
+
+
 
     <!-- scroll top top -->
 

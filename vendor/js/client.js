@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-    effect: "cube",
+    effect: "flip",
     grabCursor: true,
     autoplay:true,
     speed:200

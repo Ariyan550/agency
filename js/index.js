@@ -53,6 +53,8 @@ let durationEffect =100;
 let characterCount =0
 
 const documentOnloadFun=()=>{
+    const preloader =document.querySelector('.preloader').style.display='none'
+
     setInterval(()=>{
         pushEffectText.innerHTML += typeWriterEffectText.charAt(characterCount)
         characterCount++
@@ -204,3 +206,20 @@ const rotateIcon2 =document.querySelector('.rotate2')
         rotateIcon2.classList.toggle('rotate')
     })
 
+
+//    popup
+
+const submit  =document.querySelector('#submit')
+const pops =document.querySelector('.popupSms')
+const ok =document.querySelector('.ok')
+
+const submitFun =(e)=>{
+    pops.classList.add('activePopUp')
+}
+
+
+ok.onclick=()=>{
+    pops.classList.remove('activePopUp')
+}
+
+submit.addEventListener('click',submitFun)
